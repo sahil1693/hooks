@@ -1,3 +1,6 @@
+//implementing componentWillUnmount method using hooks
+
+
 import React,{useState,useEffect} from 'react';
 export default function HookMouse(){
 	const [x,setx]=useState(0)
