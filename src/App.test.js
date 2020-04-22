@@ -1,9 +1,10 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React,{useState} from 'react';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+export default function Hooks(){
+	const [count,inccount]=useState(0);   //inccount is a function to change the value of count
+	//const [name, setName]=useState({firstName:'',lastName:''})  //inital value can be anything 
+	return (
+		<button onClick={()=>{inccount(prevcount => prevcount+1)}}>click {count}</button>
+	)
+}
+
