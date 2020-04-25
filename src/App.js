@@ -8,6 +8,7 @@ import DataFetching from './dataFetching.js'
 import ComponentD from './ComponentD'
 import UseReducerone from './useReducerone'
 import UseReducertwo from './useReducertwo'
+import Main from './combine_usereducer_&_usecontext/Main.js'
 export const userContext = React.createContext()
 export const channelContext = React.createContext()
 function App() {
@@ -20,7 +21,8 @@ function App() {
 	</*/channelContext.Provider*/>
 	</*/userContext.Provider*/>
 	</></></></></>
-	<UseReducertwo/>
+	</*UseReducertwo/*/></>
+	<Main/>
     </div>
   );
 }
