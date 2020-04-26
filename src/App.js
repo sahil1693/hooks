@@ -8,7 +8,9 @@ import DataFetching from './dataFetching.js'
 import ComponentD from './ComponentD'
 import UseReducerone from './useReducerone'
 import UseReducertwo from './useReducertwo'
-import Main from './combine_usereducer_&_usecontext/Main.js'
+//import Main from './combine_usereducer_&_usecontext/Main.js'
+//import Main from './data_fetch/Main.js'
+import Main from './usecallback/Main.js'
 export const userContext = React.createContext()
 export const channelContext = React.createContext()
 function App() {
